@@ -1,0 +1,22 @@
+<div *ngIf="gallary">
+  <div>
+    <label>Select Multiple Files</label>
+    <input type='file' (change)="onSelectFile($event)" accept=".png, .jpg, .jpeg" multiple>
+  </div>
+
+  <img *ngFor='let url of urls' [src]="url" height="200">
+  <br/>
+
+  <div>
+    <button (click)='goToGallary()'>Go To Gallary</button>
+  </div>
+</div>
+
+<div *ngIf="!gallary">
+  <h2>Picture Gallary</h2>
+  <div *ngFor='let img of arr'>
+    <img [src]="img.url" height="100">
+    <button (click)='delete(img)'>Delete</button>
+  </div>
+  <br>
+</div>
