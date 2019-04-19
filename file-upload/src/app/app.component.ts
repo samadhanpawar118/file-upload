@@ -11,7 +11,4 @@ export class AppComponent {
   title = 'Exceptionaire Technologies';
 
   constructor(private fileupload: FileUploadDirective ) { }
-  test(){
-    console.log("-=-=this.fileupload.getFiles();-=-=",this.fileupload.files)
-  }
 }

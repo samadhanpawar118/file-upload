@@ -1,13 +1,3 @@
-// import { Injectable } from '@angular/core';
-
-// @Injectable()
-// export class UploadService {
-
-//   constructor() { }
-
-// }
-
-
 import { Injectable } from '@angular/core'
 import {
   HttpClient,

@@ -1,17 +1,3 @@
-// const express = require('express')
-// const app = express()
-// const port = 3000
-// var mongoose = require('mongoose');
-
-
-
-
-// app.get('/', (req, res) => res.send('Hello World!'))
-
-// app.listen(port, () => console.log(`Example app listening on port ${port}!`))
-
-
-
 const express = require('express')
 const multer = require('multer')
 const cors = require('cors');
@@ -24,12 +10,7 @@ const DB_NAME = 'db.json';
 const COLLECTION_NAME = 'images';
 const UPLOAD_PATH = 'uploads';
 const upload = multer({ dest: `${UPLOAD_PATH}/` });
-//const db = new Loki(`${UPLOAD_PATH}/${DB_NAME}`, { persistenceMethod: 'fs' });
 
-// optional: clean all data before start
-// cleanFolder(UPLOAD_PATH);
-
-// app
 const app = express();
 app.use(cors());
 app.use(express.static(__dirname + '/uploads'));

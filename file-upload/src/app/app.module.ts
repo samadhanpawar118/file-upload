@@ -4,9 +4,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { FileUploadDirective } from './shared/file-upload/file-upload.directive';
 import { UploadService } from '../app/upload/upload.service';
-
-// import { ImagePreview } from './shared/image-preview.directive';
-
 @NgModule({
   declarations: [
     AppComponent,
